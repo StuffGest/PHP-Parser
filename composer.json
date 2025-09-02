@@ -1,5 +1,5 @@
 {
-    "name": "nikic/php-parser",
+    "name": "stuffgest/php-parser",
     "type": "library",
     "description": "A PHP parser written in PHP",
     "keywords": [
