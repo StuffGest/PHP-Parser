@@ -15,7 +15,7 @@ use PhpParserSG\Node\Stmt;
  *  * the skeleton file grammar/parser.template
  *  * the preprocessing script grammar/rebuildParsers.php
  */
-class Php7 extends \PhpParser\ParserAbstract
+class Php7 extends \PhpParserSG\ParserAbstract
 {
     protected $tokenToSymbolMapSize = 396;
     protected $actionTableSize = 1241;
