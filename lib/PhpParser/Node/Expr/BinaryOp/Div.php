@@ -1,8 +1,8 @@
 <?php declare(strict_types=1);
 
-namespace PhpParser\Node\Expr\BinaryOp;
+namespace PhpParserSG\Node\Expr\BinaryOp;
 
-use PhpParser\Node\Expr\BinaryOp;
+use PhpParserSG\Node\Expr\BinaryOp;
 
 class Div extends BinaryOp
 {

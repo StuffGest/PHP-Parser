@@ -1,9 +1,9 @@
 <?php declare(strict_types=1);
 
-namespace PhpParser\Builder;
+namespace PhpParserSG\Builder;
 
 use PhpParser;
-use PhpParser\BuilderHelpers;
+use PhpParserSG\BuilderHelpers;
 
 abstract class Declaration implements PhpParser\Builder
 {

@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace PhpParser\Node\Name;
+namespace PhpParserSG\Node\Name;
 
 class FullyQualified extends \PhpParser\Node\Name
 {

@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace PhpParser\Node;
+namespace PhpParserSG\Node;
 
 abstract class Scalar extends Expr
 {

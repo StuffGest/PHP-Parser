@@ -1,13 +1,13 @@
 <?php
 
-namespace PhpParser\Parser;
+namespace PhpParserSG\Parser;
 
-use PhpParser\Error;
-use PhpParser\Node;
-use PhpParser\Node\Expr;
-use PhpParser\Node\Name;
-use PhpParser\Node\Scalar;
-use PhpParser\Node\Stmt;
+use PhpParserSG\Error;
+use PhpParserSG\Node;
+use PhpParserSG\Node\Expr;
+use PhpParserSG\Node\Name;
+use PhpParserSG\Node\Scalar;
+use PhpParserSG\Node\Stmt;
 
 /* This is an automatically GENERATED file, which should not be manually edited.
  * Instead edit one of the following:

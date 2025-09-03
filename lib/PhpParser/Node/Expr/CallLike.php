@@ -1,10 +1,10 @@
 <?php declare(strict_types=1);
 
-namespace PhpParser\Node\Expr;
+namespace PhpParserSG\Node\Expr;
 
-use PhpParser\Node\Arg;
-use PhpParser\Node\Expr;
-use PhpParser\Node\VariadicPlaceholder;
+use PhpParserSG\Node\Arg;
+use PhpParserSG\Node\Expr;
+use PhpParserSG\Node\VariadicPlaceholder;
 
 abstract class CallLike extends Expr {
     /**

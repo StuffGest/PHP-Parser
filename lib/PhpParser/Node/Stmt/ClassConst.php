@@ -1,8 +1,8 @@
 <?php declare(strict_types=1);
 
-namespace PhpParser\Node\Stmt;
+namespace PhpParserSG\Node\Stmt;
 
-use PhpParser\Node;
+use PhpParserSG\Node;
 
 class ClassConst extends Node\Stmt
 {

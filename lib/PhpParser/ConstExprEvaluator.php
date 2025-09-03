@@ -1,10 +1,10 @@
 <?php
 
-namespace PhpParser;
+namespace PhpParserSG;
 
 use function array_merge;
-use PhpParser\Node\Expr;
-use PhpParser\Node\Scalar;
+use PhpParserSG\Node\Expr;
+use PhpParserSG\Node\Scalar;
 
 /**
  * Evaluates constant expressions.

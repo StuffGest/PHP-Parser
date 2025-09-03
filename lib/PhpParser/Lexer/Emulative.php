@@ -1,23 +1,23 @@
 <?php declare(strict_types=1);
 
-namespace PhpParser\Lexer;
+namespace PhpParserSG\Lexer;
 
-use PhpParser\Error;
-use PhpParser\ErrorHandler;
-use PhpParser\Lexer;
-use PhpParser\Lexer\TokenEmulator\AttributeEmulator;
-use PhpParser\Lexer\TokenEmulator\EnumTokenEmulator;
-use PhpParser\Lexer\TokenEmulator\CoaleseEqualTokenEmulator;
-use PhpParser\Lexer\TokenEmulator\ExplicitOctalEmulator;
-use PhpParser\Lexer\TokenEmulator\FlexibleDocStringEmulator;
-use PhpParser\Lexer\TokenEmulator\FnTokenEmulator;
-use PhpParser\Lexer\TokenEmulator\MatchTokenEmulator;
-use PhpParser\Lexer\TokenEmulator\NullsafeTokenEmulator;
-use PhpParser\Lexer\TokenEmulator\NumericLiteralSeparatorEmulator;
-use PhpParser\Lexer\TokenEmulator\ReadonlyFunctionTokenEmulator;
-use PhpParser\Lexer\TokenEmulator\ReadonlyTokenEmulator;
-use PhpParser\Lexer\TokenEmulator\ReverseEmulator;
-use PhpParser\Lexer\TokenEmulator\TokenEmulator;
+use PhpParserSG\Error;
+use PhpParserSG\ErrorHandler;
+use PhpParserSG\Lexer;
+use PhpParserSG\Lexer\TokenEmulator\AttributeEmulator;
+use PhpParserSG\Lexer\TokenEmulator\EnumTokenEmulator;
+use PhpParserSG\Lexer\TokenEmulator\CoaleseEqualTokenEmulator;
+use PhpParserSG\Lexer\TokenEmulator\ExplicitOctalEmulator;
+use PhpParserSG\Lexer\TokenEmulator\FlexibleDocStringEmulator;
+use PhpParserSG\Lexer\TokenEmulator\FnTokenEmulator;
+use PhpParserSG\Lexer\TokenEmulator\MatchTokenEmulator;
+use PhpParserSG\Lexer\TokenEmulator\NullsafeTokenEmulator;
+use PhpParserSG\Lexer\TokenEmulator\NumericLiteralSeparatorEmulator;
+use PhpParserSG\Lexer\TokenEmulator\ReadonlyFunctionTokenEmulator;
+use PhpParserSG\Lexer\TokenEmulator\ReadonlyTokenEmulator;
+use PhpParserSG\Lexer\TokenEmulator\ReverseEmulator;
+use PhpParserSG\Lexer\TokenEmulator\TokenEmulator;
 
 class Emulative extends Lexer
 {

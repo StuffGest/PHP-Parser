@@ -1,8 +1,8 @@
 <?php declare(strict_types=1);
 
-namespace PhpParser\Node\Expr;
+namespace PhpParserSG\Node\Expr;
 
-use PhpParser\Node\Expr;
+use PhpParserSG\Node\Expr;
 
 class YieldFrom extends Expr
 {

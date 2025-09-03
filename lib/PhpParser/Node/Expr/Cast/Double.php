@@ -1,8 +1,8 @@
 <?php declare(strict_types=1);
 
-namespace PhpParser\Node\Expr\Cast;
+namespace PhpParserSG\Node\Expr\Cast;
 
-use PhpParser\Node\Expr\Cast;
+use PhpParserSG\Node\Expr\Cast;
 
 class Double extends Cast
 {

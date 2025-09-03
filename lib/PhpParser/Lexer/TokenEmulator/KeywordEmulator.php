@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace PhpParser\Lexer\TokenEmulator;
+namespace PhpParserSG\Lexer\TokenEmulator;
 
 abstract class KeywordEmulator extends TokenEmulator
 {

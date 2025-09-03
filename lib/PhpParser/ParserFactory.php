@@ -1,9 +1,9 @@
 <?php declare(strict_types=1);
 
-namespace PhpParser;
+namespace PhpParserSG;
 
-use PhpParser\Lexer\Emulative;
-use PhpParser\Parser\Php7;
+use PhpParserSG\Lexer\Emulative;
+use PhpParserSG\Parser\Php7;
 
 class ParserFactory
 {

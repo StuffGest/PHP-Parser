@@ -1,9 +1,9 @@
 <?php declare(strict_types=1);
 
-namespace PhpParser\Node;
+namespace PhpParserSG\Node;
 
-use PhpParser\Node;
-use PhpParser\NodeAbstract;
+use PhpParserSG\Node;
+use PhpParserSG\NodeAbstract;
 
 class AttributeGroup extends NodeAbstract
 {

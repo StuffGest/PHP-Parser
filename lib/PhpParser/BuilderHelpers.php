@@ -1,15 +1,15 @@
 <?php declare(strict_types=1);
 
-namespace PhpParser;
+namespace PhpParserSG;
 
-use PhpParser\Node\ComplexType;
-use PhpParser\Node\Expr;
-use PhpParser\Node\Identifier;
-use PhpParser\Node\Name;
-use PhpParser\Node\Name\FullyQualified;
-use PhpParser\Node\NullableType;
-use PhpParser\Node\Scalar;
-use PhpParser\Node\Stmt;
+use PhpParserSG\Node\ComplexType;
+use PhpParserSG\Node\Expr;
+use PhpParserSG\Node\Identifier;
+use PhpParserSG\Node\Name;
+use PhpParserSG\Node\Name\FullyQualified;
+use PhpParserSG\Node\NullableType;
+use PhpParserSG\Node\Scalar;
+use PhpParserSG\Node\Stmt;
 
 /**
  * This class defines helpers used in the implementation of builders. Don't use it directly.

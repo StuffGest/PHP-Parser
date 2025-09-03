@@ -1,9 +1,9 @@
 <?php declare(strict_types=1);
 
-namespace PhpParser\ErrorHandler;
+namespace PhpParserSG\ErrorHandler;
 
-use PhpParser\Error;
-use PhpParser\ErrorHandler;
+use PhpParserSG\Error;
+use PhpParserSG\ErrorHandler;
 
 /**
  * Error handler that handles all errors by throwing them.

@@ -1,9 +1,9 @@
 <?php declare(strict_types=1);
 
-namespace PhpParser\Node\Stmt;
+namespace PhpParserSG\Node\Stmt;
 
-use PhpParser\Node\Name;
-use PhpParser\Node\Stmt;
+use PhpParserSG\Node\Name;
+use PhpParserSG\Node\Stmt;
 
 class GroupUse extends Stmt
 {

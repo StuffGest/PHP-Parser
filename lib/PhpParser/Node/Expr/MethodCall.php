@@ -1,11 +1,11 @@
 <?php declare(strict_types=1);
 
-namespace PhpParser\Node\Expr;
+namespace PhpParserSG\Node\Expr;
 
-use PhpParser\Node\Arg;
-use PhpParser\Node\Expr;
-use PhpParser\Node\Identifier;
-use PhpParser\Node\VariadicPlaceholder;
+use PhpParserSG\Node\Arg;
+use PhpParserSG\Node\Expr;
+use PhpParserSG\Node\Identifier;
+use PhpParserSG\Node\VariadicPlaceholder;
 
 class MethodCall extends CallLike
 {

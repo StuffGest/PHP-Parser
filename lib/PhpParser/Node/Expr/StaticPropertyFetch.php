@@ -1,10 +1,10 @@
 <?php declare(strict_types=1);
 
-namespace PhpParser\Node\Expr;
+namespace PhpParserSG\Node\Expr;
 
-use PhpParser\Node\Expr;
-use PhpParser\Node\Name;
-use PhpParser\Node\VarLikeIdentifier;
+use PhpParserSG\Node\Expr;
+use PhpParserSG\Node\Name;
+use PhpParserSG\Node\VarLikeIdentifier;
 
 class StaticPropertyFetch extends Expr
 {

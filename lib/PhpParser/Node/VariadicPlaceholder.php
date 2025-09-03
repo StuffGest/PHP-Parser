@@ -1,8 +1,8 @@
 <?php declare(strict_types=1);
 
-namespace PhpParser\Node;
+namespace PhpParserSG\Node;
 
-use PhpParser\NodeAbstract;
+use PhpParserSG\NodeAbstract;
 
 /**
  * Represents the "..." in "foo(...)" of the first-class callable syntax.

@@ -1,13 +1,13 @@
 <?php declare(strict_types=1);
 
-namespace PhpParser\Builder;
+namespace PhpParserSG\Builder;
 
 use PhpParser;
-use PhpParser\BuilderHelpers;
-use PhpParser\Node;
-use PhpParser\Node\Identifier;
-use PhpParser\Node\Name;
-use PhpParser\Node\Stmt;
+use PhpParserSG\BuilderHelpers;
+use PhpParserSG\Node;
+use PhpParserSG\Node\Identifier;
+use PhpParserSG\Node\Name;
+use PhpParserSG\Node\Stmt;
 
 class Enum_ extends Declaration
 {

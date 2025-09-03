@@ -1,9 +1,9 @@
 <?php declare(strict_types=1);
 
-namespace PhpParser\Node\Expr;
+namespace PhpParserSG\Node\Expr;
 
-use PhpParser\Node\Expr;
-use PhpParser\Node\Identifier;
+use PhpParserSG\Node\Expr;
+use PhpParserSG\Node\Identifier;
 
 class PropertyFetch extends Expr
 {

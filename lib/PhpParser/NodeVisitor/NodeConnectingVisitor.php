@@ -1,9 +1,9 @@
 <?php declare(strict_types=1);
 
-namespace PhpParser\NodeVisitor;
+namespace PhpParserSG\NodeVisitor;
 
-use PhpParser\Node;
-use PhpParser\NodeVisitorAbstract;
+use PhpParserSG\Node;
+use PhpParserSG\NodeVisitorAbstract;
 
 /**
  * Visitor that connects a child node to its parent node

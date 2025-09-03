@@ -1,15 +1,15 @@
 <?php declare(strict_types=1);
 
-namespace PhpParser\NodeVisitor;
+namespace PhpParserSG\NodeVisitor;
 
-use PhpParser\ErrorHandler;
-use PhpParser\NameContext;
-use PhpParser\Node;
-use PhpParser\Node\Expr;
-use PhpParser\Node\Name;
-use PhpParser\Node\Name\FullyQualified;
-use PhpParser\Node\Stmt;
-use PhpParser\NodeVisitorAbstract;
+use PhpParserSG\ErrorHandler;
+use PhpParserSG\NameContext;
+use PhpParserSG\Node;
+use PhpParserSG\Node\Expr;
+use PhpParserSG\Node\Name;
+use PhpParserSG\Node\Name\FullyQualified;
+use PhpParserSG\Node\Stmt;
+use PhpParserSG\NodeVisitorAbstract;
 
 class NameResolver extends NodeVisitorAbstract
 {

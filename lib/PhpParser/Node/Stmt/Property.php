@@ -1,11 +1,11 @@
 <?php declare(strict_types=1);
 
-namespace PhpParser\Node\Stmt;
+namespace PhpParserSG\Node\Stmt;
 
-use PhpParser\Node;
-use PhpParser\Node\ComplexType;
-use PhpParser\Node\Identifier;
-use PhpParser\Node\Name;
+use PhpParserSG\Node;
+use PhpParserSG\Node\ComplexType;
+use PhpParserSG\Node\Identifier;
+use PhpParserSG\Node\Name;
 
 class Property extends Node\Stmt
 {

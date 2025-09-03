@@ -1,9 +1,9 @@
 <?php declare(strict_types=1);
 
-namespace PhpParser\Internal;
+namespace PhpParserSG\Internal;
 
-use PhpParser\Node;
-use PhpParser\Node\Expr;
+use PhpParserSG\Node;
+use PhpParserSG\Node\Expr;
 
 /**
  * This node is used internally by the format-preserving pretty printer to print anonymous classes.

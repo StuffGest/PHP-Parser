@@ -1,9 +1,9 @@
 <?php declare(strict_types=1);
 
-namespace PhpParser;
+namespace PhpParserSG;
 
-use PhpParser\NodeVisitor\FindingVisitor;
-use PhpParser\NodeVisitor\FirstFindingVisitor;
+use PhpParserSG\NodeVisitor\FindingVisitor;
+use PhpParserSG\NodeVisitor\FirstFindingVisitor;
 
 class NodeFinder
 {

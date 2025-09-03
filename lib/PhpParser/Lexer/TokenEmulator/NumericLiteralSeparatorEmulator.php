@@ -1,8 +1,8 @@
 <?php declare(strict_types=1);
 
-namespace PhpParser\Lexer\TokenEmulator;
+namespace PhpParserSG\Lexer\TokenEmulator;
 
-use PhpParser\Lexer\Emulative;
+use PhpParserSG\Lexer\Emulative;
 
 final class NumericLiteralSeparatorEmulator extends TokenEmulator
 {

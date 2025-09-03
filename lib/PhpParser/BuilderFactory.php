@@ -1,14 +1,14 @@
 <?php declare(strict_types=1);
 
-namespace PhpParser;
+namespace PhpParserSG;
 
-use PhpParser\Node\Arg;
-use PhpParser\Node\Expr;
-use PhpParser\Node\Expr\BinaryOp\Concat;
-use PhpParser\Node\Identifier;
-use PhpParser\Node\Name;
-use PhpParser\Node\Scalar\String_;
-use PhpParser\Node\Stmt\Use_;
+use PhpParserSG\Node\Arg;
+use PhpParserSG\Node\Expr;
+use PhpParserSG\Node\Expr\BinaryOp\Concat;
+use PhpParserSG\Node\Identifier;
+use PhpParserSG\Node\Name;
+use PhpParserSG\Node\Scalar\String_;
+use PhpParserSG\Node\Stmt\Use_;
 
 class BuilderFactory
 {

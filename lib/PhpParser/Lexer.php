@@ -1,8 +1,8 @@
 <?php declare(strict_types=1);
 
-namespace PhpParser;
+namespace PhpParserSG;
 
-use PhpParser\Parser\Tokens;
+use PhpParserSG\Parser\Tokens;
 
 class Lexer
 {

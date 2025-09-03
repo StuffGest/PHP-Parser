@@ -1,9 +1,9 @@
 <?php declare(strict_types=1);
 
-namespace PhpParser\Node\Expr;
+namespace PhpParserSG\Node\Expr;
 
-use PhpParser\Node;
-use PhpParser\Node\MatchArm;
+use PhpParserSG\Node;
+use PhpParserSG\Node\MatchArm;
 
 class Match_ extends Node\Expr
 {

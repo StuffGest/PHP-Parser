@@ -1,31 +1,31 @@
 <?php declare(strict_types=1);
 
-namespace PhpParser;
+namespace PhpParserSG;
 
 /*
  * This parser is based on a skeleton written by Moriyoshi Koizumi, which in
  * turn is based on work by Masato Bito.
  */
-use PhpParser\Node\Expr;
-use PhpParser\Node\Expr\Cast\Double;
-use PhpParser\Node\Name;
-use PhpParser\Node\Param;
-use PhpParser\Node\Scalar\Encapsed;
-use PhpParser\Node\Scalar\LNumber;
-use PhpParser\Node\Scalar\String_;
-use PhpParser\Node\Stmt\Class_;
-use PhpParser\Node\Stmt\ClassConst;
-use PhpParser\Node\Stmt\ClassMethod;
-use PhpParser\Node\Stmt\Else_;
-use PhpParser\Node\Stmt\ElseIf_;
-use PhpParser\Node\Stmt\Enum_;
-use PhpParser\Node\Stmt\Interface_;
-use PhpParser\Node\Stmt\Namespace_;
-use PhpParser\Node\Stmt\Nop;
-use PhpParser\Node\Stmt\Property;
-use PhpParser\Node\Stmt\TryCatch;
-use PhpParser\Node\Stmt\UseUse;
-use PhpParser\Node\VarLikeIdentifier;
+use PhpParserSG\Node\Expr;
+use PhpParserSG\Node\Expr\Cast\Double;
+use PhpParserSG\Node\Name;
+use PhpParserSG\Node\Param;
+use PhpParserSG\Node\Scalar\Encapsed;
+use PhpParserSG\Node\Scalar\LNumber;
+use PhpParserSG\Node\Scalar\String_;
+use PhpParserSG\Node\Stmt\Class_;
+use PhpParserSG\Node\Stmt\ClassConst;
+use PhpParserSG\Node\Stmt\ClassMethod;
+use PhpParserSG\Node\Stmt\Else_;
+use PhpParserSG\Node\Stmt\ElseIf_;
+use PhpParserSG\Node\Stmt\Enum_;
+use PhpParserSG\Node\Stmt\Interface_;
+use PhpParserSG\Node\Stmt\Namespace_;
+use PhpParserSG\Node\Stmt\Nop;
+use PhpParserSG\Node\Stmt\Property;
+use PhpParserSG\Node\Stmt\TryCatch;
+use PhpParserSG\Node\Stmt\UseUse;
+use PhpParserSG\Node\VarLikeIdentifier;
 
 abstract class ParserAbstract implements Parser
 {

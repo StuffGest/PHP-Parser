@@ -1,9 +1,9 @@
 <?php declare(strict_types=1);
 
-namespace PhpParser\Node\Stmt;
+namespace PhpParserSG\Node\Stmt;
 
-use PhpParser\Error;
-use PhpParser\Node;
+use PhpParserSG\Error;
+use PhpParserSG\Node;
 
 class Class_ extends ClassLike
 {
