@@ -278,7 +278,7 @@ final class BuilderHelpers
     }
 
     /**
-     * Normalizes a doc comment: Converts plain strings to PhpParser\Comment\Doc.
+     * Normalizes a doc comment: Converts plain strings to PhpParserSG\Comment\Doc.
      *
      * @param Comment\Doc|string $docComment The doc comment to normalize
      *
@@ -293,7 +293,7 @@ final class BuilderHelpers
             return new Comment\Doc($docComment);
         }
 
-        throw new \LogicException('Doc comment must be a string or an instance of PhpParser\Comment\Doc');
+        throw new \LogicException('Doc comment must be a string or an instance of PhpParserSG\Comment\Doc');
     }
 
     /**
@@ -310,7 +310,7 @@ final class BuilderHelpers
         }
 
         if (!($attribute instanceof Node\Attribute)) {
-            throw new \LogicException('Attribute must be an instance of PhpParser\Node\Attribute or PhpParser\Node\AttributeGroup');
+            throw new \LogicException('Attribute must be an instance of PhpParserSG\Node\Attribute or PhpParserSG\Node\AttributeGroup');
         }
 
         return new Node\AttributeGroup([$attribute]);

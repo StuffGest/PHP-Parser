@@ -88,7 +88,7 @@ class JsonDecoder
     }
 
     private function classNameFromNodeType(string $nodeType) : string {
-        $className = 'PhpParser\\Node\\' . strtr($nodeType, '_', '\\');
+        $className = 'PhpParserSG\\Node\\' . strtr($nodeType, '_', '\\');
         if (class_exists($className)) {
             return $className;
         }

@@ -287,7 +287,7 @@ class Lexer
      * The available attributes are determined by the 'usedAttributes' option, which can
      * be specified in the constructor. The following attributes are supported:
      *
-     *  * 'comments'      => Array of PhpParser\Comment or PhpParser\Comment\Doc instances,
+     *  * 'comments'      => Array of PhpParserSG\Comment or PhpParserSG\Comment\Doc instances,
      *                       representing all comments that occurred between the previous
      *                       non-discarded token and the current one.
      *  * 'startLine'     => Line in which the node starts.
