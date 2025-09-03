@@ -26,21 +26,21 @@ if (empty($files)) {
     showHelp("Must specify at least one file.");
 }
 
-$lexer = new PhpParser\Lexer\Emulative(['usedAttributes' => [
+$lexer = new PhpParserSG\Lexer\Emulative(['usedAttributes' => [
     'startLine', 'endLine', 'startFilePos', 'endFilePos', 'comments'
 ]]);
-$parser = (new PhpParser\ParserFactory)->create(
-    PhpParser\ParserFactory::PREFER_PHP7,
+$parser = (new PhpParserSG\ParserFactory)->create(
+    PhpParserSG\ParserFactory::PREFER_PHP7,
     $lexer
 );
-$dumper = new PhpParser\NodeDumper([
+$dumper = new PhpParserSG\NodeDumper([
     'dumpComments' => true,
     'dumpPositions' => $attributes['with-positions'],
 ]);
-$prettyPrinter = new PhpParser\PrettyPrinter\Standard;
+$prettyPrinter = new PhpParserSG\PrettyPrinter\Standard;
 
-$traverser = new PhpParser\NodeTraverser();
-$traverser->addVisitor(new PhpParser\NodeVisitor\NameResolver);
+$traverser = new PhpParserSG\NodeTraverser();
+$traverser->addVisitor(new PhpParserSG\NodeVisitor\NameResolver);
 
 foreach ($files as $file) {
     if (strpos($file, '<?php') === 0) {
@@ -57,7 +57,7 @@ foreach ($files as $file) {
     }
 
     if ($attributes['with-recovery']) {
-        $errorHandler = new PhpParser\ErrorHandler\Collecting;
+        $errorHandler = new PhpParserSG\ErrorHandler\Collecting;
         $stmts = $parser->parse($code, $errorHandler);
         foreach ($errorHandler->getErrors() as $error) {
             $message = formatErrorMessage($error, $code, $attributes['with-column-info']);
@@ -69,7 +69,7 @@ foreach ($files as $file) {
     } else {
         try {
             $stmts = $parser->parse($code);
-        } catch (PhpParser\Error $error) {
+        } catch (PhpParserSG\Error $error) {
             $message = formatErrorMessage($error, $code, $attributes['with-column-info']);
             fwrite(STDERR, $message . "\n");
             exit(1);
@@ -96,7 +96,7 @@ foreach ($files as $file) {
     }
 }
 
-function formatErrorMessage(PhpParser\Error $e, $code, $withColumnInfo) {
+function formatErrorMessage(PhpParserSG\Error $e, $code, $withColumnInfo) {
     if ($withColumnInfo && $e->hasColumnInfo()) {
         return $e->getMessageWithColumnInfo($code);
     } else {
