@@ -9,7 +9,9 @@
     "license": "BSD-3-Clause",
     "authors": [
         {
-            "name": "Nikita Popov"
+            "name" : "Nikita Popov (initial version)/StuffGest(fork)",
+            "email" : "stuffgest@gmail.com",
+            "role" : "Developer"
         }
     ],
     "require": {
