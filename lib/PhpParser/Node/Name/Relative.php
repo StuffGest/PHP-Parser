@@ -2,7 +2,7 @@
 
 namespace PhpParserSG\Node\Name;
 
-class Relative extends \PhpParser\Node\Name
+class Relative extends \PhpParserSG\Node\Name
 {
     /**
      * Checks whether the name is unqualified. (E.g. Name)

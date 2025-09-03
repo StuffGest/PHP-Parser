@@ -2,7 +2,7 @@
 
 namespace PhpParserSG\Node\Name;
 
-class FullyQualified extends \PhpParser\Node\Name
+class FullyQualified extends \PhpParserSG\Node\Name
 {
     /**
      * Checks whether the name is unqualified. (E.g. Name)
