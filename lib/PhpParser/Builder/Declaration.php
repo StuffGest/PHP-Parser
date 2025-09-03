@@ -2,10 +2,10 @@
 
 namespace PhpParserSG\Builder;
 
-use PhpParser;
+use PhpParserSG;
 use PhpParserSG\BuilderHelpers;
 
-abstract class Declaration implements PhpParser\Builder
+abstract class Declaration implements PhpParserSG\Builder
 {
     protected $attributes = [];
 
@@ -29,7 +29,7 @@ abstract class Declaration implements PhpParser\Builder
     /**
      * Sets doc comment for the declaration.
      *
-     * @param PhpParser\Comment\Doc|string $docComment Doc comment to set
+     * @param PhpParserSG\Comment\Doc|string $docComment Doc comment to set
      *
      * @return $this The builder instance (for fluid interface)
      */

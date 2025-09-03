@@ -2,7 +2,7 @@
 
 namespace PhpParserSG\Builder;
 
-use PhpParser;
+use PhpParserSG;
 use PhpParserSG\BuilderHelpers;
 use PhpParserSG\Node;
 use PhpParserSG\Node\Stmt;
@@ -29,7 +29,7 @@ class Trait_ extends Declaration
     /**
      * Adds a statement.
      *
-     * @param Stmt|PhpParser\Builder $stmt The statement to add
+     * @param Stmt|PhpParserSG\Builder $stmt The statement to add
      *
      * @return $this The builder instance (for fluid interface)
      */
@@ -67,7 +67,7 @@ class Trait_ extends Declaration
      *
      * @return Stmt\Trait_ The built interface node
      */
-    public function getNode() : PhpParser\Node {
+    public function getNode() : PhpParserSG\Node {
         return new Stmt\Trait_(
             $this->name, [
                 'stmts' => array_merge($this->uses, $this->properties, $this->methods),

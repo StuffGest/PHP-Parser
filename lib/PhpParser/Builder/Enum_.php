@@ -2,7 +2,7 @@
 
 namespace PhpParserSG\Builder;
 
-use PhpParser;
+use PhpParserSG;
 use PhpParserSG\BuilderHelpers;
 use PhpParserSG\Node;
 use PhpParserSG\Node\Identifier;
@@ -64,7 +64,7 @@ class Enum_ extends Declaration
     /**
      * Adds a statement.
      *
-     * @param Stmt|PhpParser\Builder $stmt The statement to add
+     * @param Stmt|PhpParserSG\Builder $stmt The statement to add
      *
      * @return $this The builder instance (for fluid interface)
      */
@@ -106,7 +106,7 @@ class Enum_ extends Declaration
      *
      * @return Stmt\Enum_ The built enum node
      */
-    public function getNode() : PhpParser\Node {
+    public function getNode() : PhpParserSG\Node {
         return new Stmt\Enum_($this->name, [
             'scalarType' => $this->scalarType,
             'implements' => $this->implements,

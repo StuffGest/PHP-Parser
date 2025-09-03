@@ -2,7 +2,7 @@
 
 namespace PhpParserSG\Builder;
 
-use PhpParser;
+use PhpParserSG;
 use PhpParserSG\BuilderHelpers;
 use PhpParserSG\Node;
 use PhpParserSG\Node\Stmt;
@@ -24,7 +24,7 @@ class Namespace_ extends Declaration
     /**
      * Adds a statement.
      *
-     * @param Node|PhpParser\Builder $stmt The statement to add
+     * @param Node|PhpParserSG\Builder $stmt The statement to add
      *
      * @return $this The builder instance (for fluid interface)
      */

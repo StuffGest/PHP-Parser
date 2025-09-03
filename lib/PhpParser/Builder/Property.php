@@ -2,7 +2,7 @@
 
 namespace PhpParserSG\Builder;
 
-use PhpParser;
+use PhpParserSG;
 use PhpParserSG\BuilderHelpers;
 use PhpParserSG\Node;
 use PhpParserSG\Node\Identifier;
@@ -10,7 +10,7 @@ use PhpParserSG\Node\Name;
 use PhpParserSG\Node\Stmt;
 use PhpParserSG\Node\ComplexType;
 
-class Property implements PhpParser\Builder
+class Property implements PhpParserSG\Builder
 {
     protected $name;
 
@@ -104,7 +104,7 @@ class Property implements PhpParser\Builder
     /**
      * Sets doc comment for the property.
      *
-     * @param PhpParser\Comment\Doc|string $docComment Doc comment to set
+     * @param PhpParserSG\Comment\Doc|string $docComment Doc comment to set
      *
      * @return $this The builder instance (for fluid interface)
      */
@@ -147,7 +147,7 @@ class Property implements PhpParser\Builder
      *
      * @return Stmt\Property The built property node
      */
-    public function getNode() : PhpParser\Node {
+    public function getNode() : PhpParserSG\Node {
         return new Stmt\Property(
             $this->flags !== 0 ? $this->flags : Stmt\Class_::MODIFIER_PUBLIC,
             [

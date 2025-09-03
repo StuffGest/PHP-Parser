@@ -2,11 +2,11 @@
 
 namespace PhpParserSG\Builder;
 
-use PhpParser;
+use PhpParserSG;
 use PhpParserSG\BuilderHelpers;
 use PhpParserSG\Node;
 
-class Param implements PhpParser\Builder
+class Param implements PhpParserSG\Builder
 {
     protected $name;
 
